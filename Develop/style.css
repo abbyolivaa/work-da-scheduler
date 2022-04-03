@@ -34,6 +34,13 @@ textarea{
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
+  text-align: center;
+}
+
+.row:hover{
+  background: #ffffff;
+  color: #000000;
+  transition: all .3s ease-in-out;
 }
 
 .hour {
@@ -65,7 +72,28 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.delete {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.clear{
+  background: #ffffff;
+  color: tomato;
+  border-radius: 10px;
+  border: none;
+  padding: 20px 110px 20px 110px;
+}
+
+.clear:hover {
+  background: tomato;
+  color: black;
   transition: all .3s ease-in-out;
 }

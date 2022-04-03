@@ -12,6 +12,7 @@ var saveButton = document.querySelectorAll("button");
 var hourList = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 var hourId = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
 var hoursNumbered = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+var textarea = $("textarea");
 
 // this will display time without any delay when page loads or on referesh
 $("#currentDay").text(moment().format("Do MMMM YYYY, h:mm:ss a"));
@@ -92,3 +93,11 @@ function statusUpdate() {
 }
 //this calls the function statusUpdate
 statusUpdate();
+
+$("#clear").on("click", function() {
+    localStorage.clear();
+    for (let index = 0; index < hoursNumbered.length; index++) {
+        $("textarea")[index].value = "";
+    }
+
+})
