@@ -15,4 +15,4 @@ This website is a work-day scheduler
 * cdnjs
 
 ## Website
-file:///Users/abigailoliva/Desktop/work-day-scheduler/Develop/index.html
+file:///Users/abigailoliva/Desktop/work-day-scheduler/index.html
